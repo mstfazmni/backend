@@ -10,7 +10,9 @@ const PORT = process.env.PORT || 3000;
 //app.use(express.static('public'));
 
 app.use(bodyParser.json());
-app.use(cors());
+app.use(cors({
+    origin: ['*', 'https://mstfazmni.github.io']
+  }));
 
 // OPTIONS handler for preflight requests
 app.options('*', cors());
