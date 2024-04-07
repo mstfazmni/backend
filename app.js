@@ -10,9 +10,10 @@ const PORT = process.env.PORT || 3000;
 //app.use(express.static('public'));
 
 app.use(bodyParser.json());
-app.use(cors({
-    origin: '*'
-  }));
+app.use(cors());
+
+// OPTIONS handler for preflight requests
+app.options('*', cors());
 
 app.get('/', (req,res)=>{
     res.sendFile(__dirname + '/index.html');
