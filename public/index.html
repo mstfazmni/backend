@@ -1,0 +1,44 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Part 2</title>
+    <link rel="stylesheet" type="text/css" href="/styles.css">
+</head>
+<body>
+
+    <!-- Showing confirmation -->
+    <div id="confirmation-div" class="confirm-div"></div>
+
+    <main>
+        <section class="form-section">
+        <form>
+            <label for="first-name">First name: </label>
+                <input placeholder="Type your first name..." type="text" id="first-name"><br>
+
+            <label for="last-name">Last name: </label>    
+                <input placeholder="Type your last name..." type="text" id="last-name"><br>
+
+            <label for="UserId">ID: </label>    
+                <input placeholder="Type your ID..." type="text" id="UserId"><br>
+
+            <label for="Address">Address: </label>    
+                <input placeholder="Type your address..." type="text" id="Address"><br>
+
+            <label for="status">Status: </label>    
+                <select id="status_value">
+                    <option id="student" value="student">Student</option>
+                    <option id="staff" value="staff">Staff</option>
+                    <option id="volunteer" value="volunteer">Volunteer</option>
+                </select>
+                <br>
+
+            <button type="button" onclick="showConfirm()" id="register-button">Register</button>
+        </form>
+    </section> 
+    </main>
+
+    <script type="text/javascript" src="/script.js"></script>
+</body>
+</html>
