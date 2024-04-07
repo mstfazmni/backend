@@ -14,7 +14,6 @@ app.use(cors({
     origin: ['*', 'https://mstfazmni.github.io']
   }));
 
-  
 // OPTIONS handler for preflight requests
 app.options('*', cors());
 
