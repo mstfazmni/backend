@@ -17,7 +17,7 @@ function showConfirm() {
     };
 
     // Send form data to backend
-    fetch('https://rainbow-cascaron-8dd939.netlify.app/register', {
+    fetch('https://genuine-cupcake-1af9de.netlify.app/.netlify/functions/app/register', {
         method: 'POST',
         //mode: 'no-cors',
         headers: {
